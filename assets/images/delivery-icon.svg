@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Truck body -->
+  <rect x="8" y="32" width="40" height="16" rx="2" fill="#ff9900"/>
+  
+  <!-- Truck cabin -->
+  <rect x="40" y="28" width="16" height="20" rx="2" fill="#ff9900"/>
+  
+  <!-- Wheels -->
+  <circle cx="20" cy="48" r="6" fill="#232f3e"/>
+  <circle cx="44" cy="48" r="6" fill="#232f3e"/>
+  
+  <!-- Windows -->
+  <rect x="42" y="30" width="12" height="8" rx="1" fill="#ffffff"/>
+  
+  <!-- Package -->
+  <rect x="12" y="34" width="8" height="8" fill="#ffffff"/>
+  <rect x="22" y="34" width="8" height="8" fill="#ffffff"/>
+  <rect x="32" y="34" width="8" height="8" fill="#ffffff"/>
+</svg>

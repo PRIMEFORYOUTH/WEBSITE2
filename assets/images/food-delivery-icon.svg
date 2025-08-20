@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pizza slice -->
+  <path d="M 32 8 L 56 32 L 32 56 L 8 32 Z" fill="#ff9900"/>
+  
+  <!-- Pizza toppings -->
+  <circle cx="24" cy="28" r="2" fill="#ffffff"/>
+  <circle cx="40" cy="36" r="2" fill="#ffffff"/>
+  <circle cx="32" cy="44" r="2" fill="#ffffff"/>
+  <circle cx="20" cy="40" r="2" fill="#ffffff"/>
+  
+  <!-- Delivery bag -->
+  <rect x="20" y="48" width="24" height="12" rx="2" fill="#232f3e"/>
+  <rect x="24" y="50" width="16" height="8" rx="1" fill="#ffffff"/>
+  
+  <!-- Handle -->
+  <rect x="28" y="44" width="8" height="4" rx="2" fill="#232f3e"/>
+</svg>
