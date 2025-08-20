@@ -132,6 +132,61 @@ p {
     margin-top: 0;
 }
 
+/* Mobile-specific fixes for header overlap */
+@media (max-width: 768px) {
+    .hero {
+        padding: 200px 0 60px;
+    }
+    
+    .header .container {
+        min-height: 70px;
+        padding: 0.8rem 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header .countdown-label {
+        font-size: 0.7rem;
+    }
+    
+    .header .time-number {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+    
+    .header .time-label {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 220px 0 40px;
+    }
+    
+    .header .container {
+        min-height: 60px;
+        padding: 0.6rem 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-text h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
