@@ -182,25 +182,48 @@ p {
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
+    background: #ff9900;
+    color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-weight: 600;
-    text-align: center;
+    font-size: 1rem;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.btn:hover {
+    background: #e68900;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 153, 0, 0.3);
 }
 
 .btn-primary {
     background: #ff9900;
-    color: #333;
+    color: white;
 }
 
 .btn-primary:hover {
     background: #e68900;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(255, 153, 0, 0.3);
+}
+
+.btn-large {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.external-link-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3'/%3E%3C/svg%3E") no-repeat center;
+    mask-size: contain;
+    vertical-align: middle;
 }
 
 .trial-note {
@@ -230,8 +253,18 @@ p {
     color: #ccc;
     font-size: 0.8rem;
     margin-top: 1rem;
-    font-style: italic;
-    opacity: 0.8;
+}
+
+.redirect-notice-prominent {
+    color: #0066cc;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 102, 204, 0.2);
 }
 
 .hero-image {
