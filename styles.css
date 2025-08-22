@@ -68,36 +68,7 @@ p {
 
 /* Removed countdown-related styles */
 
-.header .offer-badge {
-    padding: 0.5rem 1rem;
-    margin: 0;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-}
-
-.header .offer-label {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
-    color: #333;
-    display: block;
-    text-align: center;
-}
-
-.header .offer-text {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ff9900;
-    display: block;
-    text-align: center;
-}
-
-.header .offer-subtext {
-    font-size: 0.7rem;
-    color: #666;
-    display: block;
-    text-align: center;
-}
+/* Removed offer badge styles for policy compliance */
 
 /* Removed countdown timer styles */
 
@@ -425,9 +396,7 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header .offer-badge {
-        display: block;
-    }
+    /* Removed offer badge styles */
 
     .hero-content {
         grid-template-columns: 1fr;
