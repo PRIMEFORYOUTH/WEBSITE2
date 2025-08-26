@@ -92,8 +92,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Track CTA button clicks for analytics and Google Ads conversions
     const ctaButtons = document.querySelectorAll('a[href*="amzn.to"]');
     
+    console.log('Found CTA buttons:', ctaButtons.length);
+    
     ctaButtons.forEach(button => {
         button.addEventListener('click', function() {
+            console.log('CTA button clicked:', this.href);
+            
             // Google Analytics tracking
             
             // Google Ads conversion tracking
@@ -114,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Facebook Ads conversion tracking
             if (typeof fbq !== 'undefined') {
+                // Track Lead event
                 fbq('track', 'Lead', {
                     value: 1.00,
                     currency: 'USD'
@@ -126,6 +131,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     value: 1.00,
                     currency: 'USD'
                 });
+                
+                // Debug logging
+                console.log('Facebook Pixel events fired: Lead + CustomizeProduct');
+            } else {
+                console.log('Facebook Pixel not loaded');
             }
             
             // Reddit Pixel conversion tracking
@@ -265,4 +275,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize tooltips
     initTooltips();
+    
+    // Verify Facebook Pixel is working
+    if (typeof fbq !== 'undefined') {
+        console.log('Facebook Pixel loaded successfully');
+        // Fire a test event to verify tracking
+        fbq('track', 'PageView');
+    } else {
+        console.log('Facebook Pixel not loaded - check implementation');
+    }
 });
