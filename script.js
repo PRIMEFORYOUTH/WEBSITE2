@@ -128,6 +128,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
+            // Reddit Pixel conversion tracking
+            if (typeof rdt !== 'undefined') {
+                rdt('track', 'Lead', {
+                    value: 1.00,
+                    currency: 'USD'
+                });
+            }
+            
             // Optional: Add a small delay to ensure the click is registered
             // Note: HTML link already opens in new tab, so no need for window.open()
             // setTimeout(() => {
