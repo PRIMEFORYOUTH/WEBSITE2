@@ -148,13 +148,19 @@ p {
     
     /* Mobile eligibility highlight adjustments */
     .eligibility-highlight {
-        flex-direction: column;
-        gap: 0.8rem;
+        gap: 0.5rem;
+        padding-bottom: 0.8rem;
+    }
+    
+    .eligibility-badge {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+        white-space: nowrap;
     }
     
     .eligibility-separator {
-        transform: rotate(90deg);
-        padding: 0.5rem 0;
+        font-size: 1rem;
+        padding: 0 0.3rem;
     }
 }
 
@@ -190,7 +196,9 @@ p {
     justify-content: flex-start;
     gap: 1rem;
     margin-bottom: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
 }
 
 .eligibility-badge {
