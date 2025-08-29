@@ -203,15 +203,12 @@ p {
 }
 
 .eligibility-badge {
-    background: white;
-    color: #0f1111;
+    color: white;
     padding: 0.4rem 0.8rem;
     font-weight: 600;
     font-size: 0.95rem;
     white-space: nowrap;
     text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .eligibility-separator {
