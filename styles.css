@@ -150,17 +150,19 @@ p {
     .eligibility-highlight {
         gap: 0.5rem;
         padding-bottom: 0.8rem;
+        justify-content: center;
+        overflow-x: visible;
     }
     
     .eligibility-badge {
-        font-size: 0.85rem;
-        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
         white-space: nowrap;
     }
     
     .eligibility-separator {
-        font-size: 1rem;
-        padding: 0 0.3rem;
+        font-size: 0.9rem;
+        padding: 0 0.2rem;
     }
 }
 
@@ -193,11 +195,10 @@ p {
 .eligibility-highlight {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
     padding-bottom: 0.5rem;
 }
 
@@ -622,6 +623,23 @@ p {
     
     .prime-logo span {
         font-size: 1.5rem;
+    }
+    
+    /* Mobile eligibility highlight adjustments */
+    .eligibility-highlight {
+        gap: 0.5rem;
+        padding-bottom: 0.8rem;
+        justify-content: center;
+    }
+    
+    .eligibility-badge {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .eligibility-separator {
+        font-size: 1rem;
+        padding: 0 0.3rem;
     }
 }
 
