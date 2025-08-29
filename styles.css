@@ -145,6 +145,17 @@ p {
         font-size: 2.2rem;
         text-align: center;
     }
+    
+    /* Mobile eligibility highlight adjustments */
+    .eligibility-highlight {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .eligibility-separator {
+        transform: rotate(90deg);
+        padding: 0.5rem 0;
+    }
 }
 
 .hero-content {
@@ -170,6 +181,35 @@ p {
     font-size: 1.2rem;
     color: #e0e0e0;
     margin-bottom: 2rem;
+}
+
+/* Eligibility Highlight Styles */
+.eligibility-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.eligibility-badge {
+    background: #ffeb3b;
+    color: #0f1111;
+    padding: 0.4rem 0.8rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eligibility-separator {
+    color: #ff9900;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
 }
 
 .cta-buttons {
@@ -282,6 +322,73 @@ p {
 .benefits {
     padding: 80px 0;
     background: #f8f9fa;
+}
+
+/* Eligibility Section */
+.eligibility {
+    padding: 80px 0;
+    background: white;
+}
+
+.eligibility-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eligibility-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #37475a;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.eligibility-criteria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.criteria-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #ff9900;
+}
+
+.criteria-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.criteria-text h3 {
+    color: #0f1111;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.criteria-text p {
+    color: #37475a;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.eligibility-note {
+    background: rgba(255, 153, 0, 0.1);
+    border: 1px solid rgba(255, 153, 0, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.eligibility-note p {
+    color: #0f1111;
+    margin: 0;
+    font-weight: 500;
 }
 
 .benefits-grid {
@@ -464,8 +571,23 @@ p {
     .benefits,
     .how-it-works,
     .cta-section,
-    .faq {
+    .faq,
+    .eligibility {
         padding: 60px 0;
+    }
+    
+    .eligibility-criteria {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .criteria-item {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .criteria-icon {
+        font-size: 2rem;
     }
 }
 
