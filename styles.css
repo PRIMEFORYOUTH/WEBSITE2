@@ -195,7 +195,7 @@ p {
 .eligibility-highlight {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
@@ -203,7 +203,7 @@ p {
 }
 
 .eligibility-badge {
-    background: #ffeb3b;
+    background: white;
     color: #0f1111;
     padding: 0.4rem 0.8rem;
     font-weight: 600;
@@ -215,7 +215,7 @@ p {
 }
 
 .eligibility-separator {
-    color: #ff9900;
+    color: white;
     font-weight: 700;
     font-size: 1.1rem;
     padding: 0 0.5rem;
