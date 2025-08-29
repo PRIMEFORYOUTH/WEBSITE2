@@ -600,7 +600,7 @@ p {
 
 @media (max-width: 480px) {
     .hero-text h2 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     
     .btn {
@@ -638,6 +638,12 @@ p {
     .eligibility-separator {
         font-size: 1rem;
         padding: 0 0.3rem;
+    }
+    
+    /* Mobile social proof spacing */
+    .social-proof {
+        font-size: 0.8rem;
+        margin: 1.5rem 0;
     }
 }
 
