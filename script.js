@@ -121,16 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Track Lead event
                 fbq('track', 'Lead');
                 
-                // Also track as a custom event
-                fbq('track', 'CustomizeProduct', {
-                    content_name: 'Amazon Prime Signup',
-                    content_category: 'Affiliate Marketing',
-                    value: 1.00,
-                    currency: 'USD'
-                });
-                
                 // Debug logging
-                console.log('Facebook Pixel events fired: Lead + CustomizeProduct');
+                console.log('Facebook Pixel event fired: Lead');
             } else {
                 console.log('Facebook Pixel not loaded');
             }
