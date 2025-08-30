@@ -119,10 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Facebook Ads conversion tracking
             if (typeof fbq !== 'undefined') {
                 // Track Lead event
-                fbq('track', 'Lead', {
-                    value: 1.00,
-                    currency: 'USD'
-                });
+                fbq('track', 'Lead');
                 
                 // Also track as a custom event
                 fbq('track', 'CustomizeProduct', {
