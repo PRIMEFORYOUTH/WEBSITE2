@@ -23,7 +23,12 @@
     <meta name="twitter:description" content="18-24 year olds & students: Get 6 months of Amazon Prime FREE, then pay just $7.49/month. Fast delivery, streaming, food delivery & more!">
     <meta name="twitter:image" content="https://primeforyouth.xyz/SocialSharing.webp">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://alb.reddit.com">
+    <link rel="preconnect" href="https://pixel-config.reddit.com">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
@@ -43,7 +48,7 @@
     </script>
     
     <!-- Meta Pixel Code -->
-    <script>
+    <script async>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -61,14 +66,14 @@
     <!-- End Meta Pixel Code -->
     
     <!-- Reddit Pixel -->
-    <script>
+    <script async>
     !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_hkg7upbq5rmu');rdt('track', 'PageVisit');
     </script>
     <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
     <!-- End Reddit Pixel -->
     
     <!-- Microsoft Clarity -->
-    <script type="text/javascript">
+    <script async type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -109,7 +114,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/images/amazon-logo.png" alt="Amazon" class="hero-logo">
+                    <img loading="lazy" src="assets/images/amazon-logo.png" alt="Amazon" class="hero-logo">
                 </div>
             </div>
         </div>
@@ -122,42 +127,42 @@
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <img src="assets/images/delivery-icon.svg" alt="Fast Delivery" width="64" height="64">
+                        <img loading="lazy" src="assets/images/delivery-icon.svg" alt="Fast Delivery" width="64" height="64">
                     </div>
                     <h3>Fast, free delivery</h3>
                     <p>Enjoy Same-Day, One-Day, and Two-Day Delivery on millions of items.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <img src="assets/images/streaming-icon.svg" alt="Prime Video Streaming" width="64" height="64">
+                        <img loading="lazy" src="assets/images/streaming-icon.svg" alt="Prime Video Streaming" width="64" height="64">
                     </div>
                     <h3>Prime Video streaming</h3>
                     <p>Prime Video has all the new releases, cult classics, award-winning Originals, live sports, and more with some ads.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <img src="assets/images/food-delivery-icon.svg" alt="Food Delivery" width="64" height="64">
+                        <img loading="lazy" src="assets/images/food-delivery-icon.svg" alt="Food Delivery" width="64" height="64">
                     </div>
                     <h3>$0 food delivery fees</h3>
                     <p>Members get Grubhub+ included—which means you save $120 per year.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <img src="assets/images/groceries-icon.svg" alt="Groceries" width="64" height="64">
+                        <img loading="lazy" src="assets/images/groceries-icon.svg" alt="Groceries" width="64" height="64">
                     </div>
                     <h3>Groceries</h3>
                     <p>Get Prime savings at Amazon Fresh and Whole Foods Market, in store or online.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <img src="assets/images/deals-icon.svg" alt="Prime Deals" width="64" height="64">
+                        <img loading="lazy" src="assets/images/deals-icon.svg" alt="Prime Deals" width="64" height="64">
                     </div>
                     <h3>Prime deals</h3>
                     <p>Prime Members save on thousands of items</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <img src="assets/images/fuel-icon.svg" alt="Fuel Savings" width="64" height="64">
+                        <img loading="lazy" src="assets/images/fuel-icon.svg" alt="Fuel Savings" width="64" height="64">
                     </div>
                     <h3>Amazon Prime Fuel Savings</h3>
                     <p>Save 10¢ a gallon at over 7,000 participating stations.</p>
