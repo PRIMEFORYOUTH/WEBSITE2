@@ -13,6 +13,7 @@ body {
     background-color: #ffffff;
     padding-top: 0;
     margin-top: 0;
+    contain: layout style;
 }
 
 .container {
@@ -237,17 +238,17 @@ p {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.2rem;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
     border: none;
     cursor: pointer;
     text-align: center;
     position: relative;
+    will-change: transform, filter;
 }
 
 .btn:hover {
-    background: #e68900;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 153, 0, 0.3);
+    transform: translateY(-2px) scale(1.05);
+    filter: brightness(1.1);
 }
 
 .btn-primary {
@@ -334,12 +335,14 @@ p {
 .benefits {
     padding: 80px 0;
     background: #f8f9fa;
+    contain: layout;
 }
 
 /* Eligibility Section */
 .eligibility {
     padding: 80px 0;
     background: white;
+    contain: layout;
 }
 
 .eligibility-content {
@@ -419,15 +422,21 @@ p {
     transition: transform 0.3s ease;
     contain: layout style paint;
     will-change: transform;
+    transform: translateZ(0); /* Force hardware acceleration */
 }
 
 .benefit-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
 }
 
 .benefit-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .benefit-card h3 {
@@ -491,6 +500,7 @@ p {
     padding: 60px 0;
     background: #f8f9fa;
     text-align: center;
+    contain: layout;
 }
 
 .bottom-cta-content h2 {
@@ -505,6 +515,7 @@ p {
     background: #131921;
     color: white;
     padding: 60px 0 20px;
+    contain: layout;
 }
 
 .footer-content {
