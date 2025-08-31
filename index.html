@@ -26,10 +26,16 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://alb.reddit.com">
     <link rel="preconnect" href="https://pixel-config.reddit.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.clarity.ms">
+    <link rel="preconnect" href="https://www.redditstatic.com">
+    <link rel="preconnect" href="https://scripts.clarity.ms">
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="preload" href="assets/images/amazon-logo.webp" as="image" type="image/webp">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <!-- Google tag (gtag.js) -->
@@ -114,7 +120,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img loading="lazy" src="assets/images/amazon-logo.webp" alt="Amazon" class="hero-logo">
+                    <img loading="lazy" src="assets/images/amazon-logo.webp" alt="Amazon" class="hero-logo" width="180" height="111">
                 </div>
             </div>
         </div>
@@ -234,6 +240,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
