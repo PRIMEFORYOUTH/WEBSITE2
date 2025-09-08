@@ -208,6 +208,271 @@
         </div>
     </section>
 
+    <!-- Savings Calculator Section -->
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2>Prime Savings Calculator</h2>
+            <p class="calculator-intro">See how much you could save with Amazon Prime. Enter your monthly spending habits below to calculate potential savings.</p>
+
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="monthly-spending">Monthly Amazon Spending ($)</label>
+                        <input type="number" id="monthly-spending" placeholder="e.g., 150" min="0" max="5000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="shipping-frequency">Average Shipping Orders per Month</label>
+                        <input type="number" id="shipping-frequency" placeholder="e.g., 4" min="0" max="50">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="prime-deals-percentage">Prime Deal Savings (% of spending)</label>
+                        <input type="number" id="prime-deals-percentage" placeholder="e.g., 15" min="0" max="50" value="15">
+                    </div>
+
+                    <button id="calculate-btn" class="btn btn-primary">Calculate Savings</button>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="result-card">
+                        <h3>Monthly Savings</h3>
+                        <div class="result-amount" id="monthly-savings">$0</div>
+                        <p class="result-description">Estimated monthly savings with Prime</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>Yearly Savings</h3>
+                        <div class="result-amount" id="yearly-savings">$0</div>
+                        <p class="result-description">Total savings over 12 months</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>Breakeven Point</h3>
+                        <div class="result-amount" id="breakeven-months">0 months</div>
+                        <p class="result-description">When Prime pays for itself</p>
+                    </div>
+
+                    <div class="result-card highlight">
+                        <h3>Net Annual Savings</h3>
+                        <div class="result-amount" id="net-savings">$0</div>
+                        <p class="result-description">Savings after Prime subscription cost</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator-breakdown">
+                <h3>How We Calculate Your Savings</h3>
+                <div class="breakdown-grid">
+                    <div class="breakdown-item">
+                        <div class="breakdown-icon">🚚</div>
+                        <h4>Free Shipping</h4>
+                        <p>$10/month average shipping savings (varies by order frequency)</p>
+                    </div>
+
+                    <div class="breakdown-item">
+                        <div class="breakdown-icon">🏷️</div>
+                        <h4>Prime Deals</h4>
+                        <p>15% average savings on Prime-exclusive deals and early access</p>
+                    </div>
+
+                    <div class="breakdown-item">
+                        <div class="breakdown-icon">⚡</div>
+                        <h4>Fast Delivery</h4>
+                        <p>Same-day and faster shipping options save time and convenience</p>
+                    </div>
+
+                    <div class="breakdown-item">
+                        <div class="breakdown-icon">💰</div>
+                        <h4>Subscription Cost</h4>
+                        <p>$7.49/month student rate (after 6-month free trial)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Tricks Section -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <h2>Prime Tips & Tricks for Students</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">1</div><h3>Master the Search Filters</h3>
+                    <p>Use Amazon's advanced search filters to find Prime-exclusive deals. Look for "Prime eligible" and sort by customer reviews to get the best student-approved products.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">2</div><h3>Download for Offline Viewing</h3>
+                    <p>Download Prime Video shows and movies to watch offline during study sessions or when your dorm WiFi is slow. Perfect for long flights or areas with poor connectivity.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">3</div><h3>Combine with Student Discounts</h3>
+                    <p>Stack Prime savings with other student discounts. Many brands offer additional student pricing on top of Prime's free shipping and exclusive deals.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">4</div><h3>Use Prime for Dorm Cooking</h3>
+                    <p>Order groceries through Prime Now or Whole Foods delivery. Get fresh ingredients delivered same-day and save on dorm essentials like coffee, snacks, and study fuel.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">5</div><h3>Set Price Drop Alerts</h3>
+                    <p>Use Amazon's price tracking feature to get notified when items you want go on sale. Prime members get priority access to flash sales and Lightning Deals.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">6</div><h3>Explore Prime Reading</h3>
+                    <p>Access thousands of books, magazines, and comics for free through Prime Reading. Great for light reading, research, or discovering new authors between classes.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">7</div><h3>Take Advantage of Free Returns</h3>
+                    <p>Prime's free return shipping makes online shopping risk-free. Try new study gadgets, dorm decor, or clothes knowing you can return anything that doesn't work out.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">8</div><h3>Share Account Benefits</h3>
+                    <p>Share your Prime benefits with up to two roommates. Split the $7.49/month cost while everyone enjoys free shipping, Prime Video, and exclusive deals.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">9</div><h3>Prime Music for Studying</h3>
+                    <p>Access millions of songs ad-free through Prime Music. Create custom playlists for study sessions, focus time, or relaxation. Perfect for background music during long study nights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How much does Amazon Prime really cost for students?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For eligible students and young adults (18-24), Amazon Prime costs just $7.49/month after your 6-month free trial. This is a significant discount compared to the regular $17.99/month price. You'll get all the same benefits including free shipping, Prime Video, music, and more.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are the best Prime deals for students right now?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Students can save hundreds on textbooks, electronics, and dorm essentials. Look for Prime-exclusive deals on Amazon's student deals page. Popular categories include laptops, study supplies, dorm decor, and fitness equipment. Prime members also get early access to Lightning Deals.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I share my Prime benefits with roommates or family?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Prime for Young Adults does not include Amazon Household sharing benefits. Unlike regular Prime, you cannot share your Prime benefits with other household members. Each eligible student or young adult needs their own Prime for Young Adults membership to access the discounted benefits.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's the best way to use Prime Video as a student?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Prime Video is great for study breaks and downtime. Download movies and shows for offline viewing when you have spotty dorm WiFi. Look for educational documentaries, foreign films for language classes, and binge-worthy series to unwind after exams.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do Prime savings add up over a school year?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Students typically save $100-200 per semester on shipping alone. Add in Prime-exclusive deals, Whole Foods discounts, and Grubhub+ savings, and you're looking at $300+ in annual savings. Plus, the entertainment value of Prime Video and Music is priceless for dorm life.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What happens if I forget to cancel before my free trial ends?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When your 6-month free trial ends, Amazon will automatically charge you the discounted student rate of $7.49/month for the next membership period. You can cancel anytime through your account settings, but paid members who haven't used their benefits are eligible for up to a full refund of the current membership period.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can international students get the Prime student discount?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! International students enrolled in accredited educational institutions are eligible. You'll need to provide proof of enrollment through Amazon's verification process. The discount applies worldwide, though some benefits like free shipping may have regional restrictions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's the difference between Prime and Prime Student?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Great question! There's no separate "Prime Student" plan anymore. All eligible students and young adults (18-24) automatically get the discounted $7.49/month rate. You get 100% of Prime benefits at a much lower price - same shipping, video, music, and everything else.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I verify my student status for the discount?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can verify through Amazon's student portal using your school email (.edu) or by uploading proof of enrollment like a student ID, schedule, or acceptance letter. The verification process takes just a few minutes and the discount applies immediately once approved.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        When will I be billed for my Prime membership?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When your 6-month free trial or membership period ends, Amazon will automatically charge for the next membership period at the discounted student rate of $7.49/month. You can cancel anytime through your account settings, but billing occurs automatically at the end of each membership period.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How does the 5% cash back work with Prime for Young Adults?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Eligible Prime for Young Adults members (ages 18-24 or enrolled students) can earn 5% cash back on eligible Amazon.com purchases. This is a great additional benefit that adds up quickly on textbooks, electronics, and other student essentials. Cash back is subject to Amazon's terms and conditions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are the additional Prime benefits I get?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Beyond the core benefits, Prime for Young Adults includes Prime Reading (hundreds of books monthly), Amazon Photos (unlimited storage), Prime Gaming (free games and Twitch subscription), early access to deals, free same-day pickup at Whole Foods, and more. You get all the same benefits as regular Prime members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bottom CTA Section -->
     <section class="bottom-cta">
         <div class="container">

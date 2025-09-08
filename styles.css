@@ -392,19 +392,45 @@ p {
     line-height: 1.6;
 }
 
-.eligibility-note {
-    background: rgba(255, 153, 0, 0.1);
-    border: 1px solid rgba(255, 153, 0, 0.2);
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-}
+    .eligibility-note {
+        background: rgba(255, 153, 0, 0.1);
+        border: 1px solid rgba(255, 153, 0, 0.2);
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+    }
 
-.eligibility-note p {
-    color: #0f1111;
-    margin: 0;
-    font-weight: 500;
-}
+    .eligibility-note p {
+        color: #0f1111;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    /* Mobile FAQ and Tips adjustments */
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
+    .faq-answer.active {
+        padding: 0 1rem 1rem;
+    }
+
+    .tip-card {
+        padding: 1rem;
+    }
+
+    .tip-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .tip-number {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+        line-height: 24px;
+        margin-right: 0.3rem;
+    }
 
 .benefits-grid {
     display: grid;
@@ -437,6 +463,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+
+.benefit-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .benefit-card h3 {
@@ -494,6 +527,286 @@ p {
 
 
 
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+    background: white;
+    contain: layout;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0f1111;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #f0f0f0;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ff9900;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: white;
+    padding: 0 1.5rem;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #37475a;
+    line-height: 1.6;
+}
+
+/* Tips & Tricks Section */
+.tips {
+    padding: 80px 0;
+    background: #f8f9fa;
+    contain: layout;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    contain: layout style paint;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-number {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: #ff9900;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.tip-card h3 {
+    color: #0f1111;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    padding-top: 0;
+}
+
+.tip-card p {
+    color: #37475a;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Savings Calculator Section */
+.calculator {
+    padding: 80px 0;
+    background: #f8f9fa;
+    contain: layout;
+}
+
+.calculator-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #37475a;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.calculator-inputs {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    color: #0f1111;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff9900;
+}
+
+#calculate-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.calculator-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.result-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+.result-card.highlight {
+    background: linear-gradient(135deg, #ff9900, #e68900);
+    color: white;
+}
+
+.result-card.highlight .result-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.result-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: inherit;
+}
+
+.result-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff9900;
+    margin-bottom: 0.5rem;
+}
+
+.result-card.highlight .result-amount {
+    color: white;
+}
+
+.result-description {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+.calculator-breakdown {
+    margin-top: 4rem;
+}
+
+.calculator-breakdown h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0f1111;
+}
+
+.breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.breakdown-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.breakdown-item:hover {
+    transform: translateY(-5px);
+}
+
+.breakdown-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.breakdown-item h4 {
+    color: #0f1111;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.breakdown-item p {
+    color: #37475a;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
 
 /* Bottom CTA Section */
 .bottom-cta {
@@ -596,9 +909,64 @@ p {
     .benefits,
     .how-it-works,
     .cta-section,
+    .calculator,
     .faq,
+    .tips,
     .eligibility {
         padding: 60px 0;
+    }
+
+    .calculator-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .calculator-results {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-inputs {
+        padding: 1.5rem;
+    }
+
+    .breakdown-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .breakdown-item {
+        padding: 1.2rem;
+    }
+
+    .faq-container {
+        padding: 0 1rem;
+    }
+
+    .faq-question {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .faq-answer.active {
+        padding: 0 1.2rem 1.2rem;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .tip-card {
+        padding: 1.2rem;
+    }
+
+    .tip-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+        line-height: 28px;
+        margin-right: 0.3rem;
     }
     
     .eligibility-criteria {
