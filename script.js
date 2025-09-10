@@ -95,9 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Found CTA buttons:', ctaButtons.length);
     
     ctaButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default link behavior
-
+        button.addEventListener('click', function() {
             console.log('CTA button clicked:', this.href);
             
             // Google Analytics tracking
@@ -137,24 +135,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
-            // Open link without referrer after tracking events
-            setTimeout(() => {
-                // Method 1: Using window.open with referrer control
-                const newWindow = window.open('', '_blank');
-                if (newWindow) {
-                    newWindow.opener = null; // Remove opener reference
-                    newWindow.location.href = this.href;
-                } else {
-                    // Fallback: Create a temporary link and click it
-                    const tempLink = document.createElement('a');
-                    tempLink.href = this.href;
-                    tempLink.target = '_blank';
-                    tempLink.rel = 'noopener noreferrer';
-                    document.body.appendChild(tempLink);
-                    tempLink.click();
-                    document.body.removeChild(tempLink);
-                }
-            }, 100);
+            // Optional: Add a small delay to ensure the click is registered
+            // Note: HTML link already opens in new tab, so no need for window.open()
+            // setTimeout(() => {
+            //     window.open(this.href, '_blank');
+            // }, 100);
         });
     });
     
